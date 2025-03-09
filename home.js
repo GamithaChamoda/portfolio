@@ -30,4 +30,3 @@ function leader2(){
     document.getElementById("Leader").style.display="none";
     document.getElementById("me").src="images/home/home body/gamitha(1).png";
 }
-
