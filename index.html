@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamitha Chamoda</title>
     <link rel="stylesheet" href="homeStyle.css">
 </head>
 <body>
     <!-- navigation bar start/////////////////////////////////////////////////////////////// -->
-    <div class="navigationBar">
+    <div class="navigationBar" style="display: flex; width: 100%;">
       <a href="index.html"><img style="width: 100px; height: 100px; " src="images/navigation bar/logo.webp" alt="" ></a>  
         <div style="display: flex; margin-left: 5%;">
             <a href="index.html"><h1 class="navLinks" style="color: rgb(102, 144, 168);">Home</h1></a>
@@ -17,7 +17,7 @@
             <a href="projects.html"><h1 class="navLinks" style="color: rgb(255, 255, 255);">Projects</h1></a>
             <a href="contactme.html"><h1 class="navLinks" style="color: rgb(255, 255, 255);">Contact me</h1></a>
         </div>
-        <div class="icons">
+        <div class="icons" style="display: flex;">
             <a href="https://github.com/GamithaChamoda"><img style="width: 50px; height: 50px; margin-right: 10px;margin-top: 10%; " src="images/navigation bar/GitHub-Emblem.png" alt=""></a>
             <a href="https://www.linkedin.com/in/gamitha-chamoda-7606452a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img style="width: 90px; height: 90px; margin-right: 10px; margin-top: -6%; " src="images/navigation bar/linkedin.png" alt=""></a>
             <a href="https://www.facebook.com/share/1FFANYbxBr/"><img style="width: 40px; height: 40px; margin-right: 10px;margin-top: 30%; " src="images/navigation bar/fb.jpeg" alt=""></a>
@@ -30,11 +30,19 @@
         <video width=100% autoplay muted loop  playsinline id="bgVideo" >
             <source src="videos/home/video(1).mp4" type="video/mp4">
             Your browser does not support the video tag.
-        </video>
-        <div onmouseover=undergraduate1(); onmouseout =undergraduate2(); class="leftDiv" style="width: 644px; height: 700px; ">
+        </video> 
+        <audio autoplay id="fireAudio">
+            <source src="audio/home/fireSound.mp3" type="audio/mp3">
+        </audio>
+        <div onmouseover=undergraduate1(); onmouseout =undergraduate2(); class="leftDiv" style="width: 644px; height: 700px;">
+            <img id="fireLeft" src="gif/home/fireGif.gif" style="width: 30%; display: none;" alt="">
+            <h1 id="hi" style="color:white ; font-size: 800%; display: flex; margin-left: 5%; margin-top: 15%;">Hi</h1>
+            <h2 id="im" style="color:white ; font-size: 200%; display: flex; margin-left: 10%;">I'm</h2>
+            <h2 id="gami" style="color:white ; font-size: 700%; display: flex; margin-left: 10%;">Gamitha</h2>
+            <h2 id="chamo" style="color:white ; font-size: 700%; display: flex; margin-left: 30%;">Chamoda</h2>
             <a href="undergraduate.html">
-                <p id="underAs" style="margin-top: 80px; font-size: 50px; margin-left: 3%; margin-top: 50%;display: none;">As a</p> <br>
-                <p id="underUndergraduate" style="font-size: 80px;  margin-left: 8%;display: none;">Undergraduate</p>
+                <p id="underAs" style="margin-top: 80px; font-size: 50px; margin-left: 3%; margin-top: 50%;display: none;color: white;">As a</p> <br>
+                <p id="underUndergraduate" style="font-size: 80px;  margin-left: 8%;display: none;color: white;">Undergraduate</p>
             </a>
         </div>
         <div onmouseover=leader1(); onmouseout =leader2(); class="gamithaPhoto" style=" width: 650px;">
@@ -47,9 +55,10 @@
             </a>
         </div>
         <div onmouseover=inventor1(); onmouseout =inventor2(); class="rightDiv" style="width: 650px;">
+            <img id="fireRight" src="gif/home/fireGif.gif" style="width: 30%; margin-left: 70%; display: none;" alt="">
             <a href="inventor.html">
-                <p id="inventorAs" style="margin-top: 80px; font-size: 50px; margin-top: 38%; margin-left: 10%; display: none;">As a</p> <br>
-                <p id="inventorInventor" style="font-size: 100px; margin-left: 20%; display: none;">Inventor</p>
+                <p id="inventorAs" style="margin-top: 80px; font-size: 50px; margin-top: 38%; margin-left: 10%; display: none;color: white;">As a</p> <br>
+                <p id="inventorInventor" style="font-size: 100px; margin-left: 20%; display: none;color: white;">Inventor</p>
             </a>
         </div>
     </div>
